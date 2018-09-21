@@ -2,56 +2,56 @@
 <html>
 
 <head>
-  <title> Trabalho concluido </title>
- <link rel="stylesheet" type="text/css" href="cis.css"
- <script src=validacao.js></script>
- <h3>SIC Serviço de informações ao cIdadão</h3>
+ <body bgcolor="white"> </body>
+ <title> Trabalho concluido </title>
+ <link rel="stylesheet" type="text/css" href="cis.css">
+ <h3>SIC Serviço de informações ao cidadão</h3>
 
- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <script src="validacao.js"></script>
 
-</form>
 
  </head>
  
  <body>
  
- <body bgcolor="white"> </body>
+ 
  
 
+<div id="forma1">
+<form name="forma1" action="">
 
 
 
 <h1>  Formulario de solicitação de informacão (Pessoa Física)</h1>
 
- <form>
+ 
  <h2> As informacões abaixo são obrigatórias <h2>
 
 
 <table border="2">
-<td width="1">
+<td width="50%">
 
-<form name="formn" action="">
 
  
-  Nome: <input type="text" name="nome" value size="15"><br>
+  Nome:  <input type="text" name="nome" value size="30"><br>
 
 
   
- CPF:  <input type="text" name="cpf" value size="15"><br>
+ CPF:  <input type="text" name="cpf" value size="15" min="0" max="9" maxlength="11"><br>
  
  
  
- <h3> Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se
- a opção for por o RG, indicar órgão, emissor e UF):</h3>
- 
-
- 
-  Tipo de Documento:<br> <input type="text" name="Documento" value size="25"><br>   N°:<br> <input type="text" name="tipo doc" value size="10"><br>
+ <h2> Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se
+ a opção for por o RG, indicar órgão, emissor e UF):</h2>
  
 
  
+  Tipo de Documento:<br> <input type="text" name="documento" value size="25"><br>   N°:<br> <input type="text" name="nu" value size="10"><br>
  
- Endereço eletronico (E-mail):<br> <input type="text" name="E-mail" value size="35"><br>  
+
+ 
+ 
+ Endereço eletronico (E-mail):<br> <input type="text" name="email" value size="35"><br>  
 
  
  
@@ -73,18 +73,19 @@
 
 
 
- CEP:<br> <input type="text" name="E-mail" value size="15"><br>            País<br> <input type="text" name="E-mail" value size="15"><br>
+ CEP:<br> <input type="text" name="CEP" value size="15" min="0" max="9" maxlength="8" ><br>            País<br> <input type="text" name="pais" value size="15"><br>
   </td>
   </table>
   
- </form> 
+ 
   <p>Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços</p1>
   
- <table border="2">
-<td width="100%">
+ <table border="1">
+<td width="60%">
 
 
-<form> Sexo: <input  type="radio" name="sexo" value="masculino">Masculino<input type="radio" name="sexo" value="feminino">Feminino<br>
+
+ Sexo: <input  type="radio" name="sexo" value="masculino">Masculino<input type="radio" name="sexo" value="feminino">Feminino<br>
   
   Data de Nascimento: <br> <input type="text" name="Nascimento" value size="20"><br>
   
@@ -94,10 +95,10 @@
  <input  type="radio" name="principal" value="profisssão"> Empregado - setor privado <input  type="radio" name="principal" value="profisssão"> Pesquisador <input  type="radio" name="principal" value="profisssão">  Servidor publico estadual <br> <input  type="radio" name="principal" value="profisssão">  Jornalista <input  type="radio" name="principal" value="profisssão">  Professor <input  type="radio" name="principal" value="profisssão">  Servidor publico municipal <br> <input  type="radio" name="principal" value="profisssão">  Membro de partido politico <input  type="radio" name="principal" value="profisssão">  Estudante <input  type="radio" name="principal" value="profisssão">  Membro de ONG nacional <br> <input  type="radio" name="principal" value="profisssão"> Representante de sindicato <input  type="radio" name="principal" value="profisssão"> Empresario/empreendedor <input  type="radio" name="principal" value="profisssão">  Membro de ONG internacional <br> <input  type="radio" name="principal" value="profisssão">  Profis. Liberal/autônomo <input  type="radio" name="principal" value="profisssão">  Servidor público federal <br> <input  type="radio" name="principal" value="profisssão">  Outros <br> 
   
   
-  <div>
+  
  
 
- <br>Telefone : ( <input type="text" name="E-mail" value size="2"> ) <input type="text" name="E-mail" value size="15"></br> 
+ <br>Telefone : ( <input type="text" name="E-mail" value size="1"> ) <input type="text" name="tele" value size="15"></br> 
   
 
 
@@ -116,12 +117,15 @@
   
 <h1>Especificação do pedido:</h1>
  <textarea name="mensagem" rows="20" cols="80"></textarea><br><br>
+ <input type="submit" value="enviar">
 			
   </td>
   </table>
 
   
- <button type="button">OK</button>
+ <button type="button" onclick="validarformulario(),  validarformularioC(), validarformularioD(), validarformularionu(), validarformularioemail(), validarformularioci(), validarformularioes(), validarformulariouf(), validarformularioce(), validarformulariona(), validarformulariop(), validarformulariot(), validarformulariote() ">Clique aqui</button>
+ 
+ </div>
  </form>
 
   <html>
